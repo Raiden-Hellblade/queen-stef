@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stefezia</title>
+    <link rel="stylesheet" href="./style/styleV.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/scriptV.js"></script>
+  </head>
+  <body style="background-color: black">
+    <!-- Navigation bar section -->
+    <header class="navbar">
+      <div class="nav-container">
+        <div class="navbar__title">Stefezia</div>
+        <ul class="navbar__nav">
+          <li><a id="nav-home" class="navbar__link active">Home</a></li>
+          <li><a id="nav-about" class="navbar__link">About</a></li>
+          <li><a id="nav-projects" class="navbar__link">Projects</a></li>
+          <li><a id="nav-feedback" class="navbar__link">Feedback</a></li>
+          <li><a class="navbar__link">Contact</a></li>
+          <li><a class="navbar__link">Settings</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- Main content section -->
+    <!-- <div class="loader"></div> -->
+    <!-- Loader animation when page is loading -->
+    <div class="background"></div>
+    <!-- Background image -->
+    <div class="container">
+      <!-- First main content section -->
+      <section id="home_sec">
+        <div class="home loader-anim box">
+          <div class="home-content box">
+            <div class="hero-container hero-home">
+              <div class="environment"></div>
+              <!-- <h2 class="hero glitch layers" data-text="近設計">
+                <span>近設計</span>
+              </h2> -->
+              <h2 class="hero glitch layers" data-text="Stefezia">
+                <span>Stefezia</span>
+              </h2>
+            </div>
+            <div class="home-top box">
+              <!-- Comment out profile picture for now -->
+              <!-- <div class="profile-picture"></div> -->
+              <!-- <hr class="hrToFixAnIssue"> -->
+            </div>
+            <div class="home-bottom box">
+              <div class="pic_button-box">
+                <div class="profile-pic box">
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                      <filter id="gooey">
+                        <!-- in="sourceGraphic" -->
+                        <feGaussianBlur
+                          in="SourceGraphic"
+                          stdDeviation="5"
+                          result="blur"
+                        />
+                        <feColorMatrix
+                          in="blur"
+                          type="matrix"
+                          values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                          result="highContrastGraphic"
+                        />
+                        <feComposite
+                          in="SourceGraphic"
+                          in2="highContrastGraphic"
+                          operator="atop"
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
+                  <button id="gooey-frame">
+                    <span class="bubbles">
+                      <span class="bubble"></span>
+                      <span class="bubble"></span>
+                      <span class="bubble"></span>
+                      <span class="bubble"></span>
+                      <span class="bubble"></span>
+                      <span class="bubble"></span>
+                      <span class="bubble"></span>
+                      <span class="bubble"></span>
+                      <span class="bubble"></span>
+                      <span class="bubble"></span>
+                    </span>
+                  </button>
+                </div>
+                <div class="info-home-buttons">
+                  <a
+                    href="https://www.youtube.com/@BellOfWolves"
+                    target="_blank"
+                    style="width: inherit"
+                    ><button class="kave-btn">
+                      <span class="kave-line"></span>Youtube
+                    </button></a
+                  >
+                  <a
+                    href="https://www.instagram.com/stefezia/"
+                    target="_blank"
+                    style="width: inherit"
+                  >
+                    <button class="kave-btn">
+                      <span class="kave-line"></span>Instagram
+                    </button></a
+                  >
+                </div>
+              </div>
+              <div class="info-home-para box">
+                <!-- Japanese text paragraphs -->
+                <div class="info-home-para-ra">
+                  <div class="jap">
+                    pretty b☾tches love me,
+                    and ugly h♡es hate me.
+                  </div>
+                </div>
+                <div class="info-home-para-ra">
+                  <div class="jap">
+                  Digital creator
+
+                  ━━☆・*。libra ♎️ 18 🎉
+                  　　・゜equestrian 🏇🏿
+                  　 　°。+ * 。editor ✂️
+                  　　　　 ₊ .・artist 🎨
+                  　　　 gamer 🎮
+                  　　　🌹
+                  </div>
+                </div>
+                <!-- <div class="info-home-para-ra">
+                  <div class="jap">
+                    持っていました。ライトが目指す世界支配は、結局のところ、彼の独善的な野望に過ぎなかったのです。
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about_sec" class="about-section">
+        <div class="about loader-anim box">
+          <div class="about-content box">
+            <div class="hero-container">
+              <div class="environment"></div>
+              <h2 class="hero glitch layers" data-text="ABOUT">
+                <span>ABOUT</span>
+              </h2>
+            </div>
+            <div class="about-top box">
+              <!-- Comment out profile picture for now -->
+              <!-- <div class="profile-picture"></div> -->
+            </div>
+            <div class="about-bottom box">
+              <div class="about-details box">
+                <div class="card-container">
+                  <div class="card card1">
+                      <img class="img-img" src="./images/85B240F6-C3D6-461D-B0F5-CE4E59CA7142.jpg" alt="Image 1">
+                  </div>
+                  <div class="card card2">
+                      <img class="img-img" src="./images/270777A4-36B2-4DC6-92CD-DACA9938C5C0.jpg" alt="Image 2">
+                  </div>
+                  <div class="card card3">
+                      <img class="img-img" src="./images/060108BA-6F14-4F78-B627-597D12502E94.jpg" alt="Image 3">
+                  </div>
+              </div>
+              </div>
+              <div class="info-about-para box">
+                <!-- Japanese text paragraphs -->
+                <div class="tabbed-btns">
+                  <div
+                    class="tabbed-menu active"
+                    id="raidenBtn"
+                    data-target="content1"
+                  >
+                    RAIDEN
+                  </div>
+                  <div
+                    class="tabbed-menu"
+                    id="cybersecBtn"
+                    data-target="content2"
+                  >
+                    CYBERSECURITY
+                  </div>
+                  <div
+                    class="tabbed-menu"
+                    id="languagesBtn"
+                    data-target="content3"
+                  >
+                    LANGUAGES
+                  </div>
+                  <div
+                    class="tabbed-menu"
+                    id="skillsBtn"
+                    data-target="content4"
+                  >
+                    SKILLS
+                  </div>
+                </div>
+                <div class="info-about-para-ra">
+                  <div class="wrapper">
+                    <div class="content active">
+                      Other than being the most beautiful girl in the world, I am also actually very talented, I got a wide variety of skills, video editing, audio editing, making music videos, making youtude and tiktok videos, making anime music videos, making gaming music videos making beautiful edits i can do it all, and I can make stunningly beautiful art as you will see, I am also a very open minded and creative individual, I have great problem solving skills, I am also very kind, caring and loving, simply, I am an angel ♥
+                    </div>
+                    <div class="content" style="display: none">
+                      I'm a cybersecurity student, which basically means I'm
+                      always paranoid about someone trying to hack into my
+                      online accounts. My laptop has more firewalls than a
+                      medieval castle and my password is longer than the entire
+                      Harry Potter series combined. I also have a black belt in
+                      googling and can troubleshoot my way out of any problem.
+                      So, if you need someone to secure your network or just
+                      want to chat about the latest security breaches, hit me
+                      up!
+                    </div>
+                    <div class="content" style="display: none">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Sequi, corrupti rem? Tenetur, vel asperiores? Repellat
+                      expedita doloribus, dignissimos sapiente totam explicabo
+                      eius cupiditate officiis laudantium aut, doloremque facere
+                      minus odio.
+                    </div>
+                    <div class="content" style="display: none">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Sequi, corrupti rem? Tenetur, vel asperiores? Repellat
+                      expedita doloribus, dignissimos sapiente totam explicabo
+                      eius cupiditate officiis laudantium aut, doloremque facere
+                      minus odio.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about_sec" class="about-section">
+        <div class="about loader-anim box">
+          <div class="about-content box">
+            <div class="hero-container">
+              <div class="environment"></div>
+              <h2 class="hero glitch layers" style="color: red;" data-text="GALLERY">
+                <span>GALLERY</span>
+              </h2>
+            </div>
+            <div class="about-top box">
+              <!-- Comment out profile picture for now -->
+              <!-- <div class="profile-picture"></div> -->
+            </div>
+            <div class="about-bottom1 box">
+              <div class="about-details1 box">
+                <button
+                  id="raidenBtn"
+                  class="glowing-button2 menu-btns active"
+                  data-target="content1"
+                >
+                <div class="heart-container">
+                  <img class="heart-2 heart" src="./images/heart-svgrepo-com (1).svg" alt="">
+                  <span class="text-inside">Myself</span>
+              </div>
+                </button>
+                <button
+                  id="cybersecBtn"
+                  class="glowing-button2 menu-btns"
+                  data-target="content2"
+                >
+                <div class="heart-container">
+                  <img class="heart-2 heart" src="./images/heart-svgrepo-com (1).svg" alt="">
+                  <span class="text-inside">My Art</span>
+              </div>
+                
+                </button>
+                <button
+                  id="languagesBtn"
+                  class="glowing-button2 menu-btns"
+                  data-target="content3"
+                >
+                <div class="heart-container">
+                  <img class="heart-2 heart" src="./images/heart-svgrepo-com (1).svg" alt="">
+                  <span class="text-inside">My Music</span>
+              </div>
+                </button>
+                <button
+                  id="skillsBtn"
+                  class="glowing-button2 menu-btns"
+                  data-target="content4"
+                >
+                <div class="heart-container">
+                  <img class="heart-2 heart" src="./images/heart-svgrepo-com (1).svg" alt="">
+                  <span class="text-inside">My Edits</span>
+              </div>
+                </button>
+                <button class="glowing-button2" id="Ry-Btn">Royalty</button>
+              </div>
+              <div class="info-about-para box">
+                <!-- Japanese text paragraphs -->
+                <div class="tabbed-btns">
+                  <div
+                    class="menu-btns tabbed-menu active"
+                    id="raidenBtn"
+                    data-target="content1"
+                  >
+                    RAIDEN
+                  </div>
+                  <div
+                    class="menu-btns tabbed-menu"
+                    id="cybersecBtn"
+                    data-target="content2"
+                  >
+                    CYBERSECURITY
+                  </div>
+                  <div
+                    class="menu-btns tabbed-menu"
+                    id="languagesBtn"
+                    data-target="content3"
+                  >
+                    LANGUAGES
+                  </div>
+                  <div
+                    class="menu-btns tabbed-menu"
+                    id="skillsBtn"
+                    data-target="content4"
+                  >
+                    SKILLS
+                  </div>
+                </div>
+                <div class="info-about-para-ra-1">
+                  <div class="wrapper">
+                    <div id="content1" class="content active">
+                      <div class="myself-gallery-container">
+                        <div class="myself-gallery">       
+                          <img class="myself-gallery-image" src="./images/060108BA-6F14-4F78-B627-597D12502E94.jpg" alt="">
+                          <img class="myself-gallery-image" src="./images/270777A4-36B2-4DC6-92CD-DACA9938C5C0.jpg" alt="">
+                          <img class="myself-gallery-image" src="./images/85B240F6-C3D6-461D-B0F5-CE4E59CA7142.jpg" alt="">
+                      </div>
+                      <div class="myself-gallery"> 
+                        <img class="myself-gallery-image" src="./images/FAC03A4C-6299-4345-BBD1-F2E2D592D295.jpg" alt="">      
+                        <img class="myself-gallery-image" src="./images/334045071_905986667404364_5402036250106182798_n.jpg">
+                        <img class="myself-gallery-image" src="./images/FBC22CF2-1734-45D1-95F2-7ACAEF6112DB.jpg" alt="">
+                    </div>
+                    <div class="myself-gallery">       
+                      <img class="myself-gallery-image" src="./images/IM213213.jpg" alt="">
+                      <img class="myself-gallery-image" src="./images/IMG_5949.jpg" alt="">
+                      <img class="myself-gallery-image" src="./images/Remini20210701021713968V2.jpg" alt="">
+                  </div>
+                      </div>
+                    </div>
+                    <div id="content2" class="content" style="display: none">
+                      <div class="myself-gallery-container">
+                        <div class="myself-gallery-PIC">       
+                          <img class="myself-gallery-image-PIC" src="./images/Wedding.png" alt="">
+                          <img class="myself-gallery-image-PIC" src="./images/unknown.png" alt="">
+                      </div>
+                      <div class="myself-gallery-PIC">
+                        <img class="myself-gallery-image-PIC" src="./images/Snow_Battle.png" alt="">   
+                        <img class="myself-gallery-image-PIC" src="./images/Shikari__Astari_Art.png" alt="">
+                    </div>
+                        <div class="myself-gallery-PIC">       
+                          <img class="myself-gallery-image-PIC" src="./images/Sacred_Rose_MLP.png" alt="">
+                          <img class="myself-gallery-image-PIC" src="./images/pusheen_pajama_guardian_yuumi.png" alt="">
+                      </div>
+                        <div class="myself-gallery-PIC">       
+                          <img class="myself-gallery-image-PIC" src="./images/PastelMice_Staff_PFP.png" alt="">
+                          <img class="myself-gallery-image-PIC" src="./images/Nights_Magic.png" alt="">
+                          
+                      </div>
+                      <div class="myself-gallery-PIC">       
+                        <img class="myself-gallery-image-PIC" src="./images/Marceline_The_Vampire_Queen_Fanart.png" alt="">
+                        <img class="myself-gallery-image-PIC" src="./images/Look_Into_My_Eyes_MLP.png" alt="">
+                    </div>
+                        <div class="myself-gallery-PIC">       
+                          <img class="myself-gallery-image-PIC" src="./images/letter_from_the_moon.png" alt="">
+                          <img class="myself-gallery-image-PIC" src="./images/Kate_Seaborn.png" alt="">
+                      </div>
+                      <div class="myself-gallery-PIC"> 
+                        <img class="myself-gallery-image-PIC" src="./images/Field_Play_PM.png" alt="">      
+                        <img class="myself-gallery-image-PIC" src="./images/Fanater_In_Rain.png">
+                        
+                    </div>
+                    <div class="myself-gallery-PIC"> 
+                      <img class="myself-gallery-image" src="./images/Fanater_at_night_with_logo.png" alt="">
+                      <img class="myself-gallery-image" src="./images/Disappointment_MLP.png" alt="">
+                  </div>
+                    <div class="myself-gallery-PIC">       
+                      <img class="myself-gallery-image-PIC" src="./images/Christmas_Night_MLP.png" alt="">
+                      <img class="myself-gallery-image-PIC" src="./images/0BB4A88D-33E0-462F-8E8B-01A63681F423.png" alt="">
+                  </div>
+                  <div class="myself-gallery-PIC">       
+                    <img class="myself-gallery-image-PIC" src="./images/image11111111111111.png" alt="">
+                    <img class="myself-gallery-image-PIC" src="./images/image222222222.png" alt="">
+                </div>
+                <div class="myself-gallery-PIC">       
+                  <img class="myself-gallery-image-PIC" src="./images/image333333333333.jpg" alt="">
+                  <img class="myself-gallery-image-PIC" src="./images/image44444444.jpg" alt="">
+              </div>
+              <div class="myself-gallery-PIC">       
+                <img class="myself-gallery-image-PIC" src="./images/image55555555555.jpg" alt="">
+                <img class="myself-gallery-image-PIC" src="./images/image66666666.jpg" alt="">
+            </div>
+            <div class="myself-gallery-PIC">       
+              <img class="myself-gallery-image-PIC" src="./images/image7777777777.jpg" alt="">
+              <img class="myself-gallery-image-PIC" src="./images/image44444444.jpg" alt="">
+          </div>
+                      </div>
+                    </div>
+                    <div id="content3" class="content" style="display: none">
+                      <div class="myself-gallery-container">
+                        <div class="audio-player">
+                          <span class="audio-name">Angel of Darkness by STEFEZIA</span>
+                          <audio id="audioPlayer1" src="./images/Angel_Of_Darkness.mp3" preload="auto"></audio>
+                          <button class="playButton" data-audio="audioPlayer1">▶️</button>
+                          <button class="stopButton" data-audio="audioPlayer1">⏹️</button>
+                        </div>
+                        
+                        <div class="audio-player">
+                          <span class="audio-name">Immortals In The Storm by STEFEZIA</span>
+                          <audio id="audioPlayer2" src="./images/immortals in the storm.MP3" preload="auto"></audio>
+                          <button class="playButton" data-audio="audioPlayer2">▶️</button>
+                          <button class="stopButton" data-audio="audioPlayer2">⏹️</button>
+                        </div>
+                        <div class="audio-player">
+                          <span class="audio-name">Hello Angels (Reverb) by STEFEZIA</span>
+                          <audio id="audioPlayer3" src="./images/hello angels(reverb).MP3" preload="auto"></audio>
+                          <button class="playButton" data-audio="audioPlayer3">▶️</button>
+                          <button class="stopButton" data-audio="audioPlayer3">⏹️</button>
+                        </div>
+                        <div class="audio-player">
+                          <span class="audio-name">Hello Angels by STEFEZIA</span>
+                          <audio id="audioPlayer4" src="./images/hello angels.MP3" preload="auto"></audio>
+                          <button class="playButton" data-audio="audioPlayer4">▶️</button>
+                          <button class="stopButton" data-audio="audioPlayer4">⏹️</button>
+                        </div>
+                        <div class="audio-player">
+                          <span class="audio-name">Red Savages by STEFEZIA</span>
+                          <audio id="audioPlayer5" src="./images/red savages.MP3" preload="auto"></audio>
+                          <button class="playButton" data-audio="audioPlayer5">▶️</button>
+                          <button class="stopButton" data-audio="audioPlayer5">⏹️</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="content4" class="content" style="display: none">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Sequi, corrupti rem? Tenetur, vel asperiores? Repellat
+                      expedita doloribus, dignissimos sapiente totam explicabo
+                      eius cupiditate officiis laudantium aut, doloremque facere
+                      minus odio.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about_sec" style="margin-top: 300px;" class="about-section">
+        <div class="about loader-anim box">
+          <div class="about-content box">
+            <div class="hero-container">
+              <div class="environment"></div>
+              <h2 class="hero glitch layers" style="color: red;" data-text="CONTACTS">
+                <span>CONTACTS</span>
+              </h2>
+            </div>
+            <div class="about-top box">
+              <!-- Comment out profile picture for now -->
+              <!-- <div class="profile-picture"></div> -->
+            </div>
+            <div class="about-bottom1 box">
+              <div class="about-details2 box">
+                <button
+                  id="raidenBtn"
+                  class="glowing-button2 menu-btns1 active"
+                  data-target="cont1"
+                >
+                <div class="heart-container">
+                  <img class="heart-2 heart1" src="./images/free-youtube-logo-icon-2431-thumb.png" alt="">
+                  <span class="text-inside"></span>
+              </div>
+                </button>
+                <button
+                  id="cybersecBtn"
+                  class="glowing-button2 menu-btns1"
+                  data-target="cont2"
+                >
+                <div class="heart-container">
+                  <img class="heart-2 heart1" src="./images/tiktok.png" alt="">
+                  <span class="text-inside"></span>
+              </div>
+                
+                </button>
+                <button
+                  id="languagesBtn"
+                  class="glowing-button2 menu-btns1"
+                  data-target="cont3"
+                >
+                <div class="heart-container">
+                  <img class="heart-2 heart1" src="./images/instagram-seeklogo.svg" alt="">
+                  <span class="text-inside"></span>
+              </div>
+                </button>
+                <button
+                  id="skillsBtn"
+                  class="glowing-button2 menu-btns1"
+                  data-target="cont4"
+                >
+                <div class="heart-container">
+                  <img class="heart-2 heart1" src="./images/concours-discord-cartes-voeux-fortnite-france-6.png" alt="">
+                  <span class="text-inside"></span>
+              </div>
+                </button>
+                <button class="glowing-button2" id="Ry-Btn">Royalty</button>
+              </div>
+              <div class="info-about-para box" style="max-width: 900px;">
+                <!-- Japanese text paragraphs -->
+                <div class="tabbed-btns">
+                  <div
+                    class="menu-btns1 tabbed-menu active"
+                    id="raidenBtn"
+                    data-target="cont1"
+                  >
+                    RAIDEN
+                  </div>
+                  <div
+                    class="menu-btns1 tabbed-menu"
+                    id="cybersecBtn"
+                    data-target="cont2"
+                  >
+                    CYBERSECURITY
+                  </div>
+                  <div
+                    class="menu-btns1 tabbed-menu"
+                    id="languagesBtn"
+                    data-target="cont3"
+                  >
+                    LANGUAGES
+                  </div>
+                  <div
+                    class="menu-btns1 tabbed-menu"
+                    id="skillsBtn"
+                    data-target="cont4"
+                  >
+                    SKILLS
+                  </div>
+                </div>
+                <div class="info-about-para-ra-1" style="background-color: transparent; width: 900px; border: transparent;">
+                  <div class="wrapper" style="background-color: transparent; overflow: visible; border: transparent;">
+                    <div id="cont1" class="content active">
+                      <div class="card-container" style="height: 500px;">
+                        <div class="card card2">
+                            <div class="img-img" style="border: 1px solid red; width: 210px;
+                            height: 210px;
+                            border-radius: 10px;
+                            transition: transform 0.5s ease;
+                            display: flex;
+                            justify-content: flex-start;
+                            flex-direction: column;
+                            align-items: center;
+                            padding-top: 20px;
+                            gap: 10px;
+                            background-color: rgb(22, 22, 22);
+                            /* background-image: url(./images/ytube8.jpg); */
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            ">
+                              <img src="./images/channels4_profile.jpg" alt="" style="height: 100px; width: 100px; border-radius: 50%;">
+                              <div>StefeziaGaming</div>
+                              <a href="https://www.youtube.com/@StefeziaGaming" style=" width: 100px;
+                              height: 40px;
+                              border: 1px solid red;
+                              text-decoration: none;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              color: inherit;
+                              border-radius: 5px;
+                              background-color: red;">VISIT</a>
+                        </div>
+                        </div>
+                        <div class="card card3">
+                          <div class="img-img" style="border: 1px solid red; width: 210px;
+                          height: 210px;
+                          border-radius: 10px;
+                          transition: transform 0.5s ease;
+                          display: flex;
+                          justify-content: flex-start;
+                          flex-direction: column;
+                          align-items: center;
+                          padding-top: 20px;
+                          gap: 10px;
+                          background-color: rgb(85, 0, 0);
+                          /* background-image: url(./images/ytube8.jpg); */
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          ">
+                            <img src="./images/channels1_profile.jpg" alt="" style="height: 100px; width: 100px; border-radius: 50%;">
+                            <div>Bell Of Wolves</div>
+                            <a href="https://www.youtube.com/@BellOfWolves" style=" width: 100px;
+                              height: 40px;
+                              border: 1px solid red;
+                              text-decoration: none;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              color: inherit;
+                              border-radius: 5px;
+                              background-color: red;">VISIT</a>
+                      </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div id="cont2" class="content" style="display: none;" >
+                      <div class="card-container" style="height: 500px;">
+                        <div class="card card3">
+                            <div class="img-img" style="border: 1px solid red; width: 210px;
+                            height: 210px;
+                            border-radius: 10px;
+                            transition: transform 0.5s ease;
+                            display: flex;
+                            justify-content: flex-start;
+                            flex-direction: column;
+                            align-items: center;
+                            padding-top: 20px;
+                            gap: 10px;
+                            background-color: rgb(22, 22, 22);
+                            /* background-image: url(./images/GadgetMatch-20200804-TikTok-08.jpg); */
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            ">
+                              <img src="./images/tiktokProfilePic100x100.jpeg" alt="" style="height: 100px; width: 100px; border-radius: 50%;">
+                              <div>𝒔͋𝒕͓𝒆̽𝒇̟𝒊 ͙͘͡ ★</div>
+                              <a href="https://www.tiktok.com/@stefezia" style=" width: 100px;
+                              height: 40px;
+                              border: 1px solid red;
+                              text-decoration: none;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              color: inherit;
+                              border-radius: 5px;
+                              background-color: red;">VISIT</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div id="cont3" class="content" style="display: none">
+                      <div class="card-container" style="height: 500px;">
+                        <div class="card card1">
+                            <div class="img-img" style="border: 1px solid red; width: 210px;
+                            height: 210px;
+                            border-radius: 10px;
+                            transition: transform 0.5s ease;
+                            display: flex;
+                            justify-content: flex-start;
+                            flex-direction: column;
+                            align-items: center;
+                            padding-top: 20px;
+                            gap: 10px;
+                            background-color: rgb(22, 22, 22);
+                            background-image: url(./images/instatheme.jpg);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            ">
+                              <img src="./images/insta_art.jpg" alt="" style="height: 100px; width: 100px; border-radius: 50%;">
+                              <div>🎬 𝑺𝒕𝒆𝒇𝒆𝒛𝒊𝑨𝒓𝒕 ͙͘͡ ★ 𝒔͋𝒕͓𝒆̽𝒇̟𝒊 🖌️</div>
+                              <a href="https://www.instagram.com/stefeziart/" style=" width: 100px;
+                              height: 40px;
+                              border: 1px solid red;
+                              text-decoration: none;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              color: inherit;
+                              border-radius: 5px;
+                              background-color: red;">VISIT</a>
+                        </div>
+                        </div>
+                        <div class="card card2">
+                          <div class="img-img" style="border: 1px solid red; width: 210px;
+                          height: 210px;
+                          border-radius: 10px;
+                          transition: transform 0.5s ease;
+                          display: flex;
+                          justify-content: flex-start;
+                          flex-direction: column;
+                          align-items: center;
+                          padding-top: 20px;
+                          gap: 10px;
+                          background-color: rgb(85, 0, 0);
+                          background-image: url(./images/instatheme.jpg);
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          ">
+                            <img src="./images/413362035_893425079108437_6343494019739921026_n.jpg" alt="" style="height: 100px; width: 100px; border-radius: 50%;">
+                            <div>🔔 𝑩𝒆𝒍𝒍 𝑶𝒇 𝑾𝒐𝒍𝒗𝒆𝒔 (𝑨𝒎𝒂𝒓𝒂𝒏𝒕𝒂 𝑾𝒐𝒍𝒇𝒃𝒆𝒍𝒍) 🐺</div>
+                            <a href="https://www.instagram.com/w0lfbell/" style=" width: 100px;
+                              height: 40px;
+                              border: 1px solid red;
+                              text-decoration: none;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              color: inherit;
+                              border-radius: 5px;
+                              background-color: red;">VISIT</a>
+                      </div>
+                        </div>
+                        <div class="card card3">
+                          <div class="img-img" style="border: 1px solid red; width: 210px;
+                          height: 210px;
+                          border-radius: 10px;
+                          transition: transform 0.5s ease;
+                          display: flex;
+                          justify-content: flex-start;
+                          flex-direction: column;
+                          align-items: center;
+                          padding-top: 20px;
+                          gap: 10px;
+                          background-color: rgb(85, 0, 0);
+                          background-image: url(./images/instatheme.jpg);
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          ">
+                            <img src="./images/fdfdfdfdf.png" alt="" style="height: 100px; width: 100px; border-radius: 50%;">
+                            <div>𝒔͋𝒕͓𝒆̽𝒇̟𝒊 ͙͘͡ ★</div>
+                            <a href="https://www.instagram.com/stefezia/" style=" width: 100px;
+                              height: 40px;
+                              border: 1px solid red;
+                              text-decoration: none;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              color: inherit;
+                              border-radius: 5px;
+                              background-color: red;">VISIT</a>
+                      </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div id="cont4" class="content" style="display: none">
+                      <div class="card-container" style="height: 500px;">
+                        <div class="card card3">
+                            <div class="img-img" style="border: 1px solid red; width: 210px;
+                            height: 210px;
+                            border-radius: 10px;
+                            transition: transform 0.5s ease;
+                            display: flex;
+                            justify-content: flex-start;
+                            flex-direction: column;
+                            align-items: center;
+                            padding-top: 20px;
+                            gap: 10px;
+                            background-color: rgb(22, 22, 22);
+                            /* background-image: url(./images/cyberpunk-city-skyscraper-sci-fi-uhdpaper.com-4K-8.1444.jpg); */
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            ">
+                              <img src="./images/discordpfpf.jpg" alt="" style="height: 100px; width: 100px; border-radius: 50%;">
+                              <div>𝒔͋𝒕͓𝒆̽𝒇̟𝒊 ͙͘͡ ★</div>
+                              <a href="" style=" width: 100px;
+                              height: 40px;
+                              border: 1px solid red;
+                              text-decoration: none;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              color: inherit;
+                              border-radius: 5px;
+                              background-color: red;">VISIT</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+            <script>  
+              document.addEventListener("DOMContentLoaded", function() {
+                const playButtons = document.querySelectorAll(".playButton");
+                const stopButtons = document.querySelectorAll(".stopButton");
+
+                // Add click event listeners to all play buttons
+                playButtons.forEach(function(button) {
+                  button.addEventListener("click", function() {
+                    const audioId = button.dataset.audio;
+                    const audioPlayer = document.getElementById(audioId);
+                    audioPlayer.play();
+                  });
+                });
+
+                // Add click event listeners to all stop buttons
+                stopButtons.forEach(function(button) {
+                  button.addEventListener("click", function() {
+                    const audioId = button.dataset.audio;
+                    const audioPlayer = document.getElementById(audioId);
+                    audioPlayer.pause();
+                    audioPlayer.currentTime = 0; // Reset audio to beginning
+                  });
+                });
+              });
+
+
+              function hoverEffect(index) {
+                // Reset all cards
+                const cards = document.querySelectorAll('.card');
+                cards.forEach((card, i) => {
+                    if (i == index) {
+                        card.classList.remove('hovered');
+                    }else{
+                        card.classList.add('hovered');
+                    }
+                });
+                
+                // Apply hover effect to the hovered card
+            }
+
+            function hoverEffectLeave(index) {
+                // Reset all cards
+                const cards = document.querySelectorAll('.card');
+                cards.forEach((card, i) => {
+                        card.classList.add('hovered');
+                });
+            }
+            </script>
+  <div class="ender-pls" style="font-size: 30px; color: white;background-color: black; margin-top: 300px; padding: 10px; font-family: 'Courier New', Courier, monospace;">Please forgive me :c</div>
+  </body>
+</html>
