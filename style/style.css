@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap');
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-image: url('../images/anime-girl-sky-sunset-4k-wallpaper-uhdpaper.com-320@1@m.jpg'); /* Replace 'background-image.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire body */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: fixed; /* Fix the background image so it doesn't scroll with the content */
+    
+}
+
+img{
+    pointer-events: none;
+    user-select: none;
+}
+p {
+    color: #000000b2;
+}
+
+/* Apply styles to the main header */
+.main-header {
+    max-width: 1200px; /* Set maximum width for the header */
+    width: 100%; /* Ensure the header takes up full width of the parent container */
+    margin: 0 auto; /* Center the header horizontally */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* background-color: #f0f0f0; */
+    /* border-bottom: 2px solid #ddd; */
+}
+
+/* Apply styles to the logo */
+.logo img {
+    height: 40px; /* Adjust the height of the logo */
+}
+
+/* Apply styles to the website name */
+.site-name {
+    font-size: 24px; /* Adjust the font size of the site name */
+    font-weight: bold;
+    margin-left: 10px; /* Add some spacing between the logo and site name */
+}
+
+/* Apply styles to the main navigation */
+.main-nav ul {
+    list-style-type: none; /* Remove default list styles */
+    display: flex;
+}
+
+/* Apply styles to navigation links */
+.nav-link {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Set the color of the links */
+    font-size: 16px; /* Adjust the font size of the links */
+    margin-right: 20px; /* Add spacing between the links */
+}
+
+/* Apply styles to user actions */
+.user-actions .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ff3616; 
+    color: #fff; 
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
+/* Apply hover effect on buttons */
+.user-actions .btn:hover {
+    background-color: #b31800; 
+}
+
+.user-actions .signin-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    color: #000000; 
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
+/* -------------------------- */
+/* HOME SECTION STARTS HERE */
+/* -------------------------- */
+
+/* Apply styles to the home section */
+.home-section {
+    max-width: 1200px; /* Set maximum width for the header */
+    /* max-height: 1000px; */
+    width: 100%; /* Ensure the header takes up full width of the parent container */
+    margin: 100px auto; /* Center the header horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+/* Apply styles to the welcome area of the Home Section */
+.welcome-container {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 300px;
+    gap: 150px;
+}
+
+/* Apply styles to the home content */
+.home-content {
+    max-width: 340px;
+}
+
+/* Apply styles to different sized texts */
+.home-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.home-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Apply styles to the buttons */
+.buttons {
+    display: flex;
+}
+
+.buttons .btn {
+    text-decoration: none;
+    padding: 12px 24px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ff3616;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buttons .btn:hover {
+    background-color: #b31800;
+}
+
+.buttons .learn-more-btn {
+    text-decoration: none;
+    padding: 12px 24px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 2px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buttons .learn-more-btn:hover {
+    background-color: #3a3a3a;
+}
+
+/* Apply styles to the image container */
+.image-container {
+    width: 400px;
+    margin-left: 50px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Apply styles to the form container */
+.form-container {
+    max-width: 900px;
+    width: 100%;
+    margin: 100px;
+}
+
+.form-container h2 {
+    font-weight:bolder;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.form-container form {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.form-container .form-group, button {
+    width: 200px;
+    flex-basis: calc(33.33% - 20px);
+}
+
+.circle-icon {
+    display:inline-block;
+    width: 5px; 
+    height: 5px;
+    border-radius: 50%;
+    background-color: #ff3616;
+    color: transparent;
+    line-height: 10px;
+}
+
+.form-container input, select {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+.form-container button {
+    height: 30px;
+    align-self: flex-end;
+    text-decoration: none;
+    border: none;
+    border-radius: 1px;
+    background-color: #ff3616;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #b31800;
+}
+
+/* -------------------------- */
+/* HOME SECTION STARTS HERE */
+/* -------------------------- */
+
+/* Apply styles to the home section */
+.about-section {
+    max-width: 1200px; /* Set maximum width for the header */
+    max-height: 1000px; /* Set maximum height for the header */
+    width: 100%; /* Ensure the header takes up full width of the parent container */
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+/* Apply styles to the home content */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin: 100px auto; 
+    align-items: center;
+}
+
+
+.about-content h1 {
+    font-size: 50px;
+}
+
+.about-content .panel-container {
+    margin: auto;
+    display: flex;
+    height: 500px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    gap: 80px;
+}
+
+.about-content .panel-container .panel {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-content .panel-container h2, 
+.about-content .panel-container p {
+    margin-bottom: 10px;
+}
+
+.about-content .panel-container img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 60px;
+}
+
+
+/* -------------------------- */
+/* HOME SECTION STARTS HERE */
+/* -------------------------- */
+
+
+.vehicle-section {
+    max-width: 1200px; 
+    max-height: 1000px; 
+    width: 100%; 
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+.vehicle-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin: 100px auto; 
+    align-items: center;
+}
+
+.vehicle-content h1 {
+    font-size: 50px;
+}
+
+.vehicle-content h2 {
+    font-size: 30px;
+}
+
+.vehicle-container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.vehicle-container .selection {
+    width: 240px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    /* padding: 25px; */
+    /* border: 1px solid red; */
+    font-weight: bolder;
+    font-size: 17px;
+    padding-left: 1px;
+}
+
+.vehicle-container .selection .select-btn {
+    width: 240px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    border: 1px solid rgb(78, 78, 78);
+    cursor: pointer;
+}
+
+.vehicle-container .selection .select-btn:hover, 
+.vehicle-container .selection .active {
+    background-color: #ff3616;
+}
+
+.vehicle-container .display {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.vehicle-container .display .display-item {
+    display: none;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.vehicle-container .display .active {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed; 
+    object-fit: contain;
+    background-size: 100% 100%;
+    /* border: 1px solid red; */
+}
+
+.vehicle-container .details {
+    width: 250px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgb(78, 78, 78);
+    border-right: 1px solid rgb(78, 78, 78);
+    border-left: 1px solid rgb(78, 78, 78);
+}
+
+.vehicle-container .details .details-item {
+    display: none;
+}
+
+.vehicle-container .details .active  {
+    display: block;
+}
+
+.vehicle-container .details .detail {
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 22px;
+    border-bottom: 1px solid rgb(78, 78, 78);
+}
+
+/* -------------------------- */
+/* HOME SECTION STARTS HERE */
+/* -------------------------- */
+
+.testimonial-section {
+    /* max-width: 1200px; 
+    max-height: 1000px;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: visible;
+}
+
+.testimonial-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-content .deal-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background-color: #000000e3;
+    color: #fff;  
+}
+
+.testimonial-content .deal-header h1 {
+    font-size: 32px;
+} 
+
+.testimonial-content .deal-header p {
+    color: rgb(161, 161, 161);
+} 
+
+.testimonial-content .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    gap: 100px;
+}
+
+.testimonial-content .content .left {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.testimonial-content .content .left h2 {
+    font-size:large;
+    margin-bottom: 10px;
+}
+
+.testimonial-content .content .right {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.testimonial-content .client-testimonial-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-content .client-testimonial-header h1{
+    font-size: 30px;
+}
+
+.testimonial-content .client-testimonial-header p{
+    width: 600px;
+    text-align: center;
+}
+
+.testimonial-content .client-testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    gap: 100px;
+}
+
+.testimonial-content .client-testimonial .left {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.testimonial-content .client-testimonial .right {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
